@@ -1,0 +1,71 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300");
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+@import url("mixins.less");
+@import url("magic.min.css");
+
+@font-face {
+    font-family: 'VolkswagenCopyRegular';
+    src: url('fonts/voc___-webfont.eot');
+    src: url('fonts/voc___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/voc___-webfont.woff') format('woff'),
+         url('fonts/voc___-webfont.ttf') format('truetype'),
+         url('fonts/voc___-webfont.svg#VolkswagenCopyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'VolkswagenHeadlineRegular';
+    src: url('fonts/voh___-webfont.eot');
+    src: url('fonts/voh___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/voh___-webfont.woff') format('woff'),
+         url('fonts/voh___-webfont.ttf') format('truetype'),
+         url('fonts/voh___-webfont.svg#VolkswagenHeadlineRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.VWheading(@size: 14px){ font-family: 'VolkswagenHeadlineRegular', 'Open Sans', sans-serif; font-size: @size; }
+.VWcopy(@size: 14px){ font-family: 'VolkswagenCopyRegular', 'Open Sans', sans-serif; font-size: @size; }
+
+@blue : #005793;
+@grey : #575757;
+
+.blue{ color: @blue; }
+.grey{ color: @grey; }
+
+*,*:after,*:before { .box-sizing; }
+
+body{ .VWcopy(13px); padding:0; background:#fff; }
+
+p{ .VWcopy(13px); }
+
+h1,h2,h3,h4,h5,h6{ .VWheading(13px);  font-weight:400; }
+
+a:link, a:visited { color: @linkcol; }
+
+.gmap img{ max-width:none; background:none; }
+
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+h1{ font-size:18px; }
+
+.faded{ .opacity(0.3); }
+.fadeOut{ .opacity(0); visibility:hidden !important; .transition(.5s, ease-out); }
+.fadeIn{ .opacity(1); visibility:visible !important; .transition(.5s, ease-out); }
+.hide{ .opacity(0); visibility:hidden; }
+
+/* Loading */
+#loading{ position:fixed; top:0; left:0; width:100%; height:100%; .grad-lin(#ccc, #ccc, lighten(#ccc, 10%)); } 
+#loading h1.logo{ text-align:center; margin-top:35%; .grey; text-transform:uppercase; }
+#loading h1.logo span{ display:block; font-size:28px; .blue; line-height:100%; letter-spacing:5px; }
+#loading .loader{ background:url(../img/loading.gif) center center no-repeat; background-size:80px 10px; position:absolute; width:100%; height:100%; top:0; left:0;}
+
+header{ .grad-lin(@blue, @blue, darken(@blue, 10%)); }
+header h1{ padding:10px 12px; text-align:center; .white; .impressed; margin:0; }
+
+section{ padding:15px; }
+
+p{}
