@@ -3,11 +3,11 @@
 <form class="inset form-flex">
 	<label>Select a Dealership</label>
   	  	
-  	<div class="form-spinner">
+  	<div class="form-spinner action-overflow-list">
 	    <a href="#" class="toggle-spinner">All Dealerships</a>
 	    <ul class="spinner">
 	    	{{# terms}}
-	    	<li class="spinner-item"><a data-routing="terms.posts" data-identifier="{{ slug }},dealership" data-tpl="dealership" data-sidepanel="categories" href="#">{{ name }}</a></li>
+	    	<li class="spinner-item"><a data-routing="terms.posts" data-identifier="{{ slug }},dealership" data-tpl="dealership" data-sidepanel="categories">{{ name }}</a></li>
 	    	{{/ terms}}	    	
 	    </ul>
     </div>

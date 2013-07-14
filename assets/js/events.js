@@ -21,7 +21,7 @@ $(document).on('click', 'a[data-routing]', function(e) {
     var notification = navigator.notification;
 
     _iscroll.destroy();
-    notification.activityStart("Laden", "Inhalt wird geladen...");
+    notification.activityStart("Loading", "Please Wait...");
 
     async.waterfall([
         function(callback) {
