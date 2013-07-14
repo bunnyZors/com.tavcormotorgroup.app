@@ -1,0 +1,15 @@
+{{> error }}
+
+<form class="inset form-flex">
+	<label>Select a Dealership</label>
+  	  	
+  	<div class="form-spinner">
+	    <a href="#" class="toggle-spinner">All Dealerships</a>
+	    <ul class="spinner">
+	    	{{# terms}}
+	    	<li class="spinner-item"><a data-routing="terms.posts" data-identifier="{{ slug }},dealership" data-tpl="dealership" data-sidepanel="categories" href="#">{{ name }}</a></li>
+	    	{{/ terms}}	    	
+	    </ul>
+    </div>
+  		
+</form>

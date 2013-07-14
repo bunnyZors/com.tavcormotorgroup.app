@@ -1,0 +1,16 @@
+{{> error }}
+
+<ul class="list inset">
+	<li class="list-divider">{{ term_name }}</li>
+	{{ #posts }}
+	<li class="list-item-multi-line">
+		<h3>{{ post.post_title }}</h3>
+		<p>
+			Colour: {{ vehicle_colour }}<br/>
+			Year: {{ vehicle_year }}<br/>
+			Mileage: {{ vehicle_mileage }}<br/>
+			Price: {{ vehicle_price }}
+		</p>
+	</li>
+	{{ /posts }}
+</ul>

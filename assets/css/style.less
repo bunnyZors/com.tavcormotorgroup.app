@@ -54,6 +54,9 @@ h1{ font-size:18px; }
 
 img{ max-width:100%; }
 
+a {outline : none;}
+a img {outline : none;}
+
 .fl{ float:left; }
 .fr{ float:right; }
 
@@ -62,25 +65,27 @@ img{ max-width:100%; }
 .fadeIn{ .opacity(1); visibility:visible !important; .transition(.5s, ease-out); }
 .hide{ .opacity(0); visibility:hidden; }
 
-/* Loading */
-#loading{ position:fixed; top:0; left:0; width:100%; height:100%; .grad-lin(#ccc, #ccc, lighten(#ccc, 10%)); } 
-#loading h1.logo{ text-align:center; margin-top:35%; .grey; text-transform:uppercase; }
-#loading h1.logo span{ display:block; font-size:28px; .blue; line-height:100%; letter-spacing:5px; }
-#loading .loader{ background:url(../img/loading.gif) center center no-repeat; background-size:80px 10px; position:absolute; width:100%; height:100%; top:0; left:0;}
+.action-bar{ background:#ccc; }
+.action [class*="icon-"] { color:#666; }
+.action-overflow-icon i, .action-overflow-icon i:before, .action-overflow-icon i:after{ background:#666; }
 
-header{ .grad-lin(#e6e6e6, #e6e6e6, darken(#e6e6e6, 10%)); padding:8px; border-bottom:1px solid #fff; }
-header h1{ text-align:center; .grey; text-transform:uppercase; .impressed; margin:0; }
-header h1 span{ display:block; font-size:28px; .blue; line-height:100%; letter-spacing:5px; }
+.action-bar h1.title{ .grey; text-transform:uppercase; .impressed; margin:0; font-size:13px; line-height:120%; margin-left: 5px; margin-top: 7px; }
+.action-bar h1.title span{ display:block; font-size:28px; .blue; line-height:100%; letter-spacing:5px; font-size:18px; }
+
+.action-bar ul{ margin:0; }
 
 .page{ background:#fff; }
 
-.large-btn{ position:relative; border-bottom:1px solid #fff; }
-.large-btn a{ cursor:pointer; }
-.large-btn img{}
-.btn-title{ display:block; .grad-lin(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5)); .white; .VWheading(26px); position:absolute; left:0; bottom:0; padding: 7px 12px; width:100%; text-shadow:1px 1px 2px rgba(0,0,0,0.5); }
+.home.inset{ padding:0; }
 
-.regular-btn{ position:relative; width:50%; }
-.regular-btn a{ cursor:pointer; }
-.regular-btn img{  }
+.large-section{ position:relative; border-bottom:1px solid #fff; }
+.large-section a{ cursor:pointer; text-decoration:none; }
+.large-section img{ vertical-align: text-bottom; }
+.section-title{ display:block; .grad-lin(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5)); .white; .VWheading(26px); position:absolute; left:0; bottom:0; padding: 7px 12px; width:100%; text-shadow:1px 1px 2px rgba(0,0,0,0.5); }
+
+.regular-section{ position:relative; width:50%; }
+
+.regular-section a{ cursor:pointer; }
+.regular-section img{ vertical-align: text-bottom; }
 
 
